@@ -1,1 +1,41 @@
+!pip install google-play-scraper
+import bs4 as bs
+import pandas as pd
+import numpy as np
+from google_play_scraper import Sort, reviews
 
+result, continuation_token = reviews(
+    'com.supercell.clashroyale',
+    lang='en', 
+    country='us', 
+    sort=Sort.MOST_RELEVANT, 
+    count=1000, 
+)
+result, _ = reviews(
+    'com.supercell.clashroyale',
+    continuation_token=continuation_token # defaults to None(load from the beginning)
+)
+filteredresult = [x["score"] for x in result]
+
+import matplotlib.pyplot as plt
+plt.hist(filteredresult, 
+bins = 10)
+stat.mean(filteredresult)
+plt.boxplot(filteredresult)
+plt.show()
+
+reviewwordresult = [y["content"] for y in result]
+while None in reviewwordresult:
+    reviewwordresult.remove(None)
+reviewwordresult = ' '.join(reviewwordresult)
+
+from collections import Counter
+reviewwordcount = Counter(reviewwordresult.split()).most_common(10)
+
+words = [word for word, _ in reviewwordcount]
+counts = [counts for _, counts in reviewwordcount]
+plt.bar(words, counts)
+plt.title("10 most frequent words in clash royale reviews")
+plt.ylabel("Frequency")
+plt.xlabel("Words")
+plt.show()
