@@ -19,6 +19,9 @@ likes - This is the number of likes a review has received.
 
 appversion - This is the app's version at the time the review was submitted.
 
+# Google Colaboratory
+https://colab.research.google.com/drive/1r0AIoHe4iQhcHq2k0ITj3KAilpcaQu9t?usp=sharing
+
 # Planned Methods
 * Sentiment Analysis
 * Machine Learning Analysis
