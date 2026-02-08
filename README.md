@@ -1,4 +1,4 @@
-<img width="585" height="76" alt="Lexicon Analysis Result" src="https://github.com/user-attachments/assets/dc9b5aa7-4106-435e-851e-4776413d8cb6" /># SOSC 314 Research Project
+# SOSC 314 Research Project
 This project aims to analyze Clash Royale reviews from the Google Play Store and use text as data methods to understand the motivation behind good and bad reviews. Our motivation to research Clash Royale comes from the app's relevance to our demographic and we hope our findings on this app can serve as inspiration for companies looking to improve their apps. Each week of this 7 week class, we will make progress on the project until we exhaust our methods for analyzing this data.
 ## Authors
 **Zixiong Hu and Matthew Banko**
