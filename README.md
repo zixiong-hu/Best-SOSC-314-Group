@@ -44,10 +44,27 @@ We used the natural language toolkit (NLTK)'s opinion_lexicon from nltk_corpus t
 
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/b63d23f3e0e527d1d102cb5be71ca38d46ddf863/Graphs%20and%20Results/Lexicon%20Analysis%20Result.png)
 
+# Logistic Regression Analysis
+For our logistic regression analysis, we used a sample of 250k positive reviews and 250k negative reviews to ensure that our model was not more inclined towards a certain classification simply because of the proportion of the reviews it was trained on. We also sensitized for a couple of pre-processing decisions such as for removing numbers, inclusion/exclusion of English stop words, and changing the min_df/max_df. These changes had very little effect on our model's accuracy and F1 scores. We ultimately settled on pre-processing with simply setting a min_df of 0.001 and max_df of 0.9. 
+
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/27b4d81384baba732336c81ca240dbaeb205ebe4/Graphs%20and%20Results/Logistic%20Regression%20Report.png)
+
+We also extracted the most influential positive and negative indicators in our logistic regression ranked by the coefficient value assigned to each word.
+
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/27b4d81384baba732336c81ca240dbaeb205ebe4/Graphs%20and%20Results/Positive%20and%20Negative%20Coefficeints%20Logistic%20Regression.png)
+
+# Random Forest Model
+In addition to a logistic regression, we also ran a random forest model on our data, which we wanted to use to compare to our logistic regression. We were particularly interested in the ability to determine which words were most influential to the model in a random forest. We found the model performed similarly to our logistic regression model, but its influential words were not as interesting and meaningful compared to the logistic regression.
+
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/27b4d81384baba732336c81ca240dbaeb205ebe4/Graphs%20and%20Results/Random%20Forest%20Report.png)
+
+Influential words in Random Forest:
+
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/beec56bfac37190f1c41c435875785e5e7417f48/Graphs%20and%20Results/Random%20Forest%20Coefficients.png)
+
 # Topic Model
 We created topic modles on a 250k sample of both the positive and negative reviews. A positive review was defined as a review with a score of 3 stars or higher assigned to it. A negative review was defined as a review with a score of 2 stars or lower assigned to it. Both topic models showed a significant demand around the game's balance and fixing specific aspects of the game. The negative reviews topic model went more into depth about specific aspects that needed to be fixed, such as connectivity issues, matchmaking, and game balance isseus arising from certain cards and the monetization schemes.
 
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/8a38d0c317f73d57a57ef38e0c24e9e213afd726/Graphs%20and%20Results/Postive%20Topic%20Model%20Topics%20(df_min%20%3D%2050).png)
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/8a38d0c317f73d57a57ef38e0c24e9e213afd726/Graphs%20and%20Results/Negative%20Topic%20Model%20Topics%20(df_min%20%3D%2050).png)
 
-# Logistic Regression Analysis
