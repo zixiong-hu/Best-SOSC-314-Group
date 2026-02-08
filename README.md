@@ -46,3 +46,8 @@ We used the natural language toolkit (NLTK)'s opinion_lexicon from nltk_corpus t
 
 # Topic Model
 We created topic modles on a 250k sample of both the positive and negative reviews. A positive review was defined as a review with a score of 3 stars or higher assigned to it. A negative review was defined as a review with a score of 2 stars or lower assigned to it. Both topic models showed a significant demand around the game's balance and fixing specific aspects of the game. The negative reviews topic model went more into depth about specific aspects that needed to be fixed, such as connectivity issues, matchmaking, and game balance isseus arising from certain cards and the monetization schemes.
+
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/8a38d0c317f73d57a57ef38e0c24e9e213afd726/Graphs%20and%20Results/Postive%20Topic%20Model%20Topics%20(df_min%20%3D%2050).png)
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/8a38d0c317f73d57a57ef38e0c24e9e213afd726/Graphs%20and%20Results/Negative%20Topic%20Model%20Topics%20(df_min%20%3D%2050).png)
+
+# Logistic Regression Analysis
