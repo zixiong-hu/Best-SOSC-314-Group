@@ -1,4 +1,4 @@
-# SOSC 314 Research Project
+<img width="585" height="76" alt="Lexicon Analysis Result" src="https://github.com/user-attachments/assets/dc9b5aa7-4106-435e-851e-4776413d8cb6" /># SOSC 314 Research Project
 This project aims to analyze Clash Royale reviews from the Google Play Store and use text as data methods to understand the motivation behind good and bad reviews. Our motivation to research Clash Royale comes from the app's relevance to our demographic and we hope our findings on this app can serve as inspiration for companies looking to improve their apps. Each week of this 7 week class, we will make progress on the project until we exhaust our methods for analyzing this data.
 ## Authors
 **Zixiong Hu and Matthew Banko**
@@ -32,6 +32,7 @@ Our full dataset contains around 2 million reviews with around 1.7 million revie
 
 # Lexicon Analysis
 We used the natural language toolkit (NLTK)'s opinion_lexicon from nltk_corpus to analyze the lexical content of a random sample of 500k reviews. We wanted to predict the rating of a review based on the content of the review. We considered reviews with more positive words than negative words a positive review while reviews with more negative words than positive words were considered negative reviews. We then compared this result with the actual ratings of each review and found that our lexical approach classified around 67.8% of the reviews correctedly according to our definition. 
+
 ![alt text](Graphs and Results/Lexicon Analysis Result.png)
 
 # Topic Model
