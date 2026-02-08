@@ -33,6 +33,8 @@ Our full dataset contains around 2 million reviews with around 1.7 million revie
 # Dataset Description
 For each review, we collected a unique ID, textual content, score (1–5), timestamp, number of likes, and app version, excluding personal identifiers to avoid unnecessary data collection. The review text serves as the core analytical variable, while scores, time, likes, and app version allow us to examine trends across updates and over time. Initial descriptive statistics show an overall mean score of 4.19, but a sharp decline in more recent reviews (2025–2026), which average 3.24 compared to 4.23 for older reviews, suggesting a shift in player sentiment.
 
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/bbda98bf77488c9ae64bab75b079581f80396cd6/Graphs%20and%20Results/All%20Review%20Score%20Histogram.png)
+
 For preprocessing, we removed English stop words and other low-information grammar terms that dominated early word frequency results. Reviews were categorized as positive (score ≥ 3) or negative (score ≤ 2), and word frequency histograms were generated separately for each group to explore differences in language use. We believe that single words alone are insufficient to capture some meaningful opinions. As a result, we will apply n-gram models and dictionary-based approaches to capture multi-word phrases. We will assess whether numerical scores accurately reflect expressed opinions and to identify recurring themes driving player sentiment. Then, we will analyze the content of these reviews to determine pertinent features of positive and negative opinions of Clash Royale. Our hope is that game developers can use this case study to guide their efforts in improving their games.
 
 # Lexicon Analysis
