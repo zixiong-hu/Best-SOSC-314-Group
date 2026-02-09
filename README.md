@@ -52,6 +52,7 @@ For our logistic regression analysis, we used a sample of 50k positive reviews a
 We also extracted the most influential positive and negative indicators in our logistic regression ranked by the coefficient value assigned to each word.
 
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/27b4d81384baba732336c81ca240dbaeb205ebe4/Graphs%20and%20Results/Positive%20and%20Negative%20Coefficeints%20Logistic%20Regression.png)
+
 In comparison to previous models (such as our unigrams and trigams), this proved most effective in presenting meaningful information: although there are still some relatively useless terms (such as "awesome" or "garbage") which do not convey much specific information, we see echoed complaints about the game's monetization, balancing, and cheating, and positive commentary on the game's addictive and entertaining nature. 
 
 # Random Forest Model
