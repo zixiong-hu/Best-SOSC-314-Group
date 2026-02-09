@@ -45,13 +45,14 @@ We used the natural language toolkit (NLTK)'s opinion_lexicon from nltk_corpus t
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/b63d23f3e0e527d1d102cb5be71ca38d46ddf863/Graphs%20and%20Results/Lexicon%20Analysis%20Result.png)
 
 # Logistic Regression Analysis
-For our logistic regression analysis, we used a sample of 250k positive reviews and 250k negative reviews to ensure that our model was not more inclined towards a certain classification simply because of the proportion of the reviews it was trained on. We also sensitized for a couple of pre-processing decisions such as for removing numbers, inclusion/exclusion of English stop words, and changing the min_df/max_df. These changes had very little effect on our model's accuracy and F1 scores. We ultimately settled on pre-processing with simply setting a min_df of 0.001 and max_df of 0.9. 
+For our logistic regression analysis, we used a sample of 50k positive reviews and 50k negative reviews to ensure that our model was not more inclined towards a certain classification simply because of the proportion of the reviews it was trained on. We also sensitized for a couple of pre-processing decisions such as for removing numbers, inclusion/exclusion of English stop words, and changing the min_df/max_df, experimenting with various combinations of these pre-processing decisions. The most impactful change was a 4% decrease in accuracy when raising the min_f to 0.01 and lowering the max_df to 0.8. However, overall these changes had very little effect on our model's accuracy and F1 scores, and we ultimately settled on pre-processing with simply setting a min_df of 0.001 and max_df of 0.9. 
 
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/27b4d81384baba732336c81ca240dbaeb205ebe4/Graphs%20and%20Results/Logistic%20Regression%20Report.png)
 
 We also extracted the most influential positive and negative indicators in our logistic regression ranked by the coefficient value assigned to each word.
 
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/27b4d81384baba732336c81ca240dbaeb205ebe4/Graphs%20and%20Results/Positive%20and%20Negative%20Coefficeints%20Logistic%20Regression.png)
+In comparison to previous models (such as our unigrams and trigams), this proved most effective in presenting meaningful information: although there are still some relatively useless terms (such as "awesome" or "garbage") which do not convey much specific information, we see echoed complaints about the game's monetization, balancing, and cheating, and positive commentary on the game's addictive and entertaining nature. 
 
 # Random Forest Model
 In addition to a logistic regression, we also ran a random forest model on our data, which we wanted to use to compare to our logistic regression. We were particularly interested in the ability to determine which words were most influential to the model in a random forest. We found the model performed similarly to our logistic regression model, but its influential words were not as interesting and meaningful compared to the logistic regression.
