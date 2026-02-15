@@ -76,3 +76,7 @@ Using the fightin' words method, we analyzed the words that differentiate positi
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/44fb52f40e381048e386af88d5004bd2d3db5a1d/Graphs%20and%20Results/Fightin%20Words%20positive%20words%20with%20stop%20words.png)
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/44fb52f40e381048e386af88d5004bd2d3db5a1d/Graphs%20and%20Results/Fightin%20Words%20negative%20with%20stop%20words.png)
 
+In addition, we also conducted the fightin' words method on a filtered sample that had stop words removed. We found that the sample retained nearly the same results, except that it was easier to read with the removal of stop words.
+
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/a555c2efd53649c328518c2ee44eb39e0a5beb8d/Graphs%20and%20Results/Fightin%20Words%20positive%20without%20stop%20words.png)
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/a555c2efd53649c328518c2ee44eb39e0a5beb8d/Graphs%20and%20Results/Fightin%20Words%20negative%20without%20stop%20words.png)
