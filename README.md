@@ -55,6 +55,15 @@ We also extracted the most influential positive and negative indicators in our l
 
 In comparison to previous models (such as our unigrams and trigams), this proved most effective in presenting meaningful information: although there are still some relatively useless terms (such as "awesome" or "garbage") which do not convey much specific information, we see echoed complaints about the game's monetization, balancing, and cheating, and positive commentary on the game's addictive and entertaining nature. 
 
+## Temporal Logistic Regression Analysis
+In an attempt to narrow down the factors leading to a positive or negative review, we used the natural experiment of game updates to categorize reviews and compare the differences in a logistic regression model. We had four main categories in our test. A pre-2021 category was set up as that was the time period before Champions were introduced. A 2021-2023 category was set up for the time period where Champions were the major addition to the game. A 2023-2025 category was set up for the time period where Card Evolutions were the major addition to the game. A 2025 category was set up for the time period where Heroes were the major addition to the game. These are the coefficients for the logistic regression on each category in order of Pre-2021 to 2025.
+
+![](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/89f937972e894b573b372e9ce6b0dec6a8442784/Graphs%20and%20Results/Pre-2021%20Coefficients.png)
+![](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/89f937972e894b573b372e9ce6b0dec6a8442784/Graphs%20and%20Results/2021-2023%20Champions%20Coefficients.png)
+![](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/89f937972e894b573b372e9ce6b0dec6a8442784/Graphs%20and%20Results/2023-2025%20Evos%20Coefficients.png)
+![](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/89f937972e894b573b372e9ce6b0dec6a8442784/Graphs%20and%20Results/2025%20Post%20Hero%20Coefficients.png)
+
+The most notable finding from these charts is the increasingly significance of concepts relating to the monetization scheme of the game. It appears that the monetization scheme becomes an ever more significant factor in negative reviews as the game recieves additional updates. This also tracks with our findings that more recent reviews have a much lower average rating compared to all reviews of the game.
 # Random Forest Model
 In addition to a logistic regression, we also ran a random forest model on our data, which we wanted to use to compare to our logistic regression. We were particularly interested in the ability to determine which words were most influential to the model in a random forest. We found the model performed similarly to our logistic regression model, but its influential words were not as interesting and meaningful compared to the logistic regression.
 
@@ -80,3 +89,5 @@ In addition, we also conducted the fightin' words method on a filtered sample th
 
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/a555c2efd53649c328518c2ee44eb39e0a5beb8d/Graphs%20and%20Results/Fightin%20Words%20positive%20without%20stop%20words.png)
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/a555c2efd53649c328518c2ee44eb39e0a5beb8d/Graphs%20and%20Results/Fightin%20Words%20negative%20without%20stop%20words.png)
+
+# 
