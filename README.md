@@ -70,3 +70,9 @@ We created topic modles on a 250k sample of both the positive and negative revie
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/8a38d0c317f73d57a57ef38e0c24e9e213afd726/Graphs%20and%20Results/Postive%20Topic%20Model%20Topics%20(df_min%20%3D%2050).png)
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/8a38d0c317f73d57a57ef38e0c24e9e213afd726/Graphs%20and%20Results/Negative%20Topic%20Model%20Topics%20(df_min%20%3D%2050).png)
 
+# Fightin' Words
+Using the fightin' words method, we analyzed the words that differentiate positive and negative reviews. Our results from the fightin' words method largely confirm and support our existing findings. Positive reviews were differentiated by their mention of the game's addictive nature, the strategy involved in the game, and matchmaking. Negative reviews were differentiated by their mention of the game's monetization scheme, balancing, and matchmaking system. 
+
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/44fb52f40e381048e386af88d5004bd2d3db5a1d/Graphs%20and%20Results/Fightin%20Words%20positive%20words%20with%20stop%20words.png)
+![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/44fb52f40e381048e386af88d5004bd2d3db5a1d/Graphs%20and%20Results/Fightin%20Words%20negative%20with%20stop%20words.png)
+
