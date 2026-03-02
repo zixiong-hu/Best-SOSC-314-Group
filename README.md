@@ -91,4 +91,52 @@ In addition, we also conducted the fightin' words method on a filtered sample th
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/a555c2efd53649c328518c2ee44eb39e0a5beb8d/Graphs%20and%20Results/Fightin%20Words%20negative%20without%20stop%20words.png)
 
 # Reproduction Instructions
+## Data Collection
+Data collection was done using the google-play-scraper package. The package allows for any Google Play Store app's review page to be scraped for its content and metadata. Below is the code used to scrape and save the data into a csv for permenant usage.
+```
+from google_play_scraper import Sort, reviews
+MAX_REVIEWS = float("inf")  # scrape until exhaustion
+all_reviews = []
+token = None
 
+while True:
+    batch, token = reviews(
+        'com.supercell.clashroyale',
+        continuation_token=token
+    )
+
+    if not batch:
+        break
+
+    all_reviews.extend(batch)
+
+    if len(all_reviews) >= MAX_REVIEWS:
+        break
+
+
+
+    # polite delay to reduce throttling
+    time.sleep(0.2)
+
+df = pd.DataFrame(all_reviews)
+
+df = df.rename(columns={
+    "reviewId": "review_id",
+    "thumbsUpCount": "likes"
+})
+
+df["at"] = pd.to_datetime(df.get("at"), errors="coerce")
+
+desired_cols = [
+    "review_id",
+    "content",
+    "score",
+    "at",
+    "likes",
+    "appVersion"
+]
+
+df = df[[c for c in desired_cols if c in df.columns]]
+
+df.to_csv(file_path, index=False)
+```
