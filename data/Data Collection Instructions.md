@@ -36,6 +36,7 @@ while True:
 Using this, we were able to scrape up to 2.2 million reviews from the Google Play Store.
 ## Save into a csv file
 ```
+file_path = "/content/drive/MyDrive/clash_royale_reviews.csv"
 df = pd.DataFrame(all_reviews)
 
 df = df.rename(columns={
