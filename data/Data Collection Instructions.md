@@ -1,3 +1,5 @@
+# Prerequisite Info
+The file containing our review data was nearly 1GB in size. Ensure that there will be no hardware limiations before running this code.
 ## Requirements
 - Python 3.12
 - Pandas 
