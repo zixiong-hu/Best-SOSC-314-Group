@@ -152,4 +152,16 @@ df = df[[c for c in desired_cols if c in df.columns]]
 
 df.to_csv(file_path, index=False)
 ```
-## 
+## Jupyter Notebooks
+The simplest way to reproduce our results is to run our juypter notebooks stored in the CoLab Weekly Updates folder of our Github page. The file path and certain dependencies may need to be altered for your specific environment. To follow the temporal order of our project, go in the order of
+1. Clash Royale Reviews Analysis
+2. Clash_Royale_Data
+3. Week 3 Data Analysis
+4. Clash_Royale_Operationalization
+5. Clash_Royale_Week_5
+6. Clash_Royale_Topic_Models
+7. Clash_Royale_Week_6
+
+The instructions below will introduce specific portions of the notebooks that yield certain sections of our results.
+### Baseline Analysis (Top 20 Positive and Negative Words)
+
