@@ -91,6 +91,16 @@ In addition, we also conducted the fightin' words method on a filtered sample th
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/a555c2efd53649c328518c2ee44eb39e0a5beb8d/Graphs%20and%20Results/Fightin%20Words%20negative%20without%20stop%20words.png)
 
 # Reproduction Instructions
+## Environment
+- Python 3.12
+- pandas 3.0.1
+- numPy 2.4.2
+- matplotlib 3.10.8
+- scikit-learn 1.8.0
+- nltk 3.9.1
+- pyLDAvis 3.4.1
+- FightingWords
+
 ## Data Collection
 Data collection was done using the google-play-scraper package. The package allows for any Google Play Store app's review page to be scraped for its content and metadata. Below is the code used to scrape and save the data into a csv for permenant usage.
 ```
@@ -118,6 +128,7 @@ while True:
     # polite delay to reduce throttling
     time.sleep(0.2)
 
+file_path = "/content/drive/MyDrive/clash_royale_reviews.csv"
 df = pd.DataFrame(all_reviews)
 
 df = df.rename(columns={
@@ -140,3 +151,4 @@ df = df[[c for c in desired_cols if c in df.columns]]
 
 df.to_csv(file_path, index=False)
 ```
+## 
