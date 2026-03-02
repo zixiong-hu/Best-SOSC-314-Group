@@ -90,7 +90,7 @@ In addition, we also conducted the fightin' words method on a filtered sample th
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/a555c2efd53649c328518c2ee44eb39e0a5beb8d/Graphs%20and%20Results/Fightin%20Words%20positive%20without%20stop%20words.png)
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/a555c2efd53649c328518c2ee44eb39e0a5beb8d/Graphs%20and%20Results/Fightin%20Words%20negative%20without%20stop%20words.png)
 
-# Reproduction Instructions
+# Reproducibility
 ## Environment
 - Python 3.12
 - pandas 3.0.1
@@ -161,7 +161,4 @@ The simplest way to reproduce our results is to run our juypter notebooks stored
 5. Clash_Royale_Week_5
 6. Clash_Royale_Topic_Models
 7. Clash_Royale_Week_6
-
-The instructions below will introduce specific portions of the notebooks that yield certain sections of our results.
-### Baseline Analysis (Top 20 Positive and Negative Words)
 
