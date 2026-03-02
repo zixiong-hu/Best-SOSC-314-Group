@@ -1,7 +1,7 @@
 # SOSC 314 Research Project
 This project aims to analyze Clash Royale reviews from the Google Play Store and use text as data methods to understand the motivation behind good and bad reviews. Our motivation to research Clash Royale comes from the app's relevance to our demographic and we hope our findings on this app can serve as inspiration for companies looking to improve their apps. Each week of this 7 week class, we will make progress on the project until we exhaust our methods for analyzing this data.
 
-Final Project Report: 
+Final Project Report: https://zixiong-hu.github.io/Best-SOSC-314-Group/Final%20Report/SOSC_314_Final_Report.html
 
 ## Authors
 **Zixiong Hu and Matthew Banko**
