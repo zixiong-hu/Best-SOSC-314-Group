@@ -101,6 +101,7 @@ In addition, we also conducted the fightin' words method on a filtered sample th
 - pyLDAvis 3.4.1
 - FightingWords
 
+Tested on Google Colab between Janaury and Feburary 2026
 ## Data Collection
 Data collection was done using the google-play-scraper package. The package allows for any Google Play Store app's review page to be scraped for its content and metadata. Below is the code used to scrape and save the data into a csv for permenant usage.
 ```
