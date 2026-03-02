@@ -1,5 +1,8 @@
 # SOSC 314 Research Project
 This project aims to analyze Clash Royale reviews from the Google Play Store and use text as data methods to understand the motivation behind good and bad reviews. Our motivation to research Clash Royale comes from the app's relevance to our demographic and we hope our findings on this app can serve as inspiration for companies looking to improve their apps. Each week of this 7 week class, we will make progress on the project until we exhaust our methods for analyzing this data.
+
+Final Project Report: 
+
 ## Authors
 **Zixiong Hu and Matthew Banko**
 # Research Question
@@ -18,9 +21,6 @@ at - This is the time the review was created at.
 likes - This is the number of likes a review has received.
 
 appversion - This is the app's version at the time the review was submitted.
-
-# Google Colaboratory
-https://colab.research.google.com/drive/1r0AIoHe4iQhcHq2k0ITj3KAilpcaQu9t?usp=sharing
 
 # Planned Methods
 * Sentiment Analysis
@@ -90,4 +90,5 @@ In addition, we also conducted the fightin' words method on a filtered sample th
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/a555c2efd53649c328518c2ee44eb39e0a5beb8d/Graphs%20and%20Results/Fightin%20Words%20positive%20without%20stop%20words.png)
 ![alt text](https://github.com/zixiong-hu/Best-SOSC-314-Group/blob/a555c2efd53649c328518c2ee44eb39e0a5beb8d/Graphs%20and%20Results/Fightin%20Words%20negative%20without%20stop%20words.png)
 
-# 
+# Reproduction Instructions
+
